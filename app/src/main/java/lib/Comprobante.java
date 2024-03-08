@@ -73,4 +73,13 @@ public class Comprobante {
         return verdad;
 
     }
+
+    /**
+     * Metodo para comprobar si el string es una hora
+     * @param palabra hora a comprobar
+     * @return devuelve un booleano, comprobando si cumple la condicion
+     */
+    public static boolean comprobarHora(String palabra){
+        return palabra.matches("([01][0-9]|2[0-3]):[0-5][0-9]");
+    }
 }

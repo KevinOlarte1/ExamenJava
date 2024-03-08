@@ -2,6 +2,7 @@ package lib;
 
 //import java.security.PublicKey;
 import java.util.Scanner;
+import java.time.LocalTime;
 
 public class Inputs {
     public static Scanner scanner = new Scanner(System.in);
@@ -177,5 +178,27 @@ public class Inputs {
         }while(ingreso.toLowerCase().equals("si") == false && ingreso.toLowerCase().equals("no") == false);
 
         return ingreso.toLowerCase().equals("si") ? true : false;
+    }
+
+     /**
+     * Metodo para pedir un numero entero positivo.
+     * @param mensaje mensaje que se imprime al pedir el ingreso
+     * @return devuelve el ingreso validado
+     */
+    public static LocalTime pedirHora(String mensaje){
+        String ingreso = "";
+        mensaje = mensaje == " " ? "Ingresa un hora valida." : mensaje; 
+        LocalTime resultado;
+
+        do{
+            System.out.println(mensaje);
+            ingreso = scanner.nextLine();
+            if (!Comprobante.comprobarHora(ingreso))
+                continue;
+            break;
+        }while(true);
+        resultado = LocalTime.parse(ingreso);
+
+        return resultado;
     }
 }

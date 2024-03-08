@@ -24,10 +24,14 @@ import java.util.Stack;  //Pila
 import java.util.ArrayList; //ArrayList
 import java.util.Queue;  //Cola
 import java.util.LinkedList;
+import java.time.LocalTime;
 
 
 public class App {
     public static void main(String[] args) {
-       Ejercicio e = new Ejercicio();
+      // Ejercicio e = new Ejercicio();
+      //LocalTime a = lib.Inputs.pedirHora(" ");
+      LocalTime a = lib.Inputs.pedirHora(" ");
+      System.out.println(a);
     }
 }
