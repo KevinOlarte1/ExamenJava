@@ -14,9 +14,11 @@ import java.util.ArrayList;
 import com.google.common.collect.Queues;
 import com.kevinolarte.centroMedico.Ejercicio7;
 import com.kevinolarte.centroMedico.Paciente;
+import com.kevinolarte.cine.Ejercicio;
 
 import lib.Fakers;
 import lib.Fechas;
+import lib.Randoms;
 
 import java.util.Stack;  //Pila
 import java.util.ArrayList; //ArrayList
@@ -26,6 +28,6 @@ import java.util.LinkedList;
 
 public class App {
     public static void main(String[] args) {
-       System.out.println(Fechas.obtenerFecha());
+       Ejercicio e = new Ejercicio();
     }
 }
