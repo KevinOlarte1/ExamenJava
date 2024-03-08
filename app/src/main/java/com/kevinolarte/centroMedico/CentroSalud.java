@@ -1,4 +1,4 @@
-package com.kevinolarte;
+package com.kevinolarte.centroMedico;
 
 
 import net.datafaker.Faker;

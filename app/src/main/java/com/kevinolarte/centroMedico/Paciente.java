@@ -1,4 +1,4 @@
-package com.kevinolarte;
+package com.kevinolarte.centroMedico;
 
 public class Paciente {
     public enum Sexo {

@@ -4,11 +4,19 @@
 package examenjava2;
 
 import net.datafaker.Faker;
+
+import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.ArrayList;
 
 import com.google.common.collect.Queues;
-import com.kevinolarte.Paciente;
+import com.kevinolarte.centroMedico.Ejercicio7;
+import com.kevinolarte.centroMedico.Paciente;
 
+import lib.Fakers;
+import lib.Fechas;
 
 import java.util.Stack;  //Pila
 import java.util.ArrayList; //ArrayList
@@ -17,21 +25,7 @@ import java.util.LinkedList;
 
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
-
     public static void main(String[] args) {
-        Queue<Integer> cola = new LinkedList();
-        cola.add(1);
-        cola.add(2);
-        cola.add(3);
-        System.out.println(cola.remove());
-        System.out.println(cola.remove());
-        System.out.println(cola.remove());
-        System.out.println(cola.remove());
-       
-       
-        
+       System.out.println(Fechas.obtenerFecha());
     }
 }
